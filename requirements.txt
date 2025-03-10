@@ -1,0 +1,9 @@
+gradio  # For UI deployment on Hugging Face
+transformers  # For LLMs like Llama 2
+llama-cpp-python  # For running Llama models locally
+pymupdf  # (fitz) Extract text from PDFs
+chromadb  # Vector database for efficient retrieval
+sentence-transformers  # Embeddings for document retrieval
+huggingface_hub  # For accessing Hugging Face models
+torch  # Required for Llama and other models
+numpy  # Numerical operations
