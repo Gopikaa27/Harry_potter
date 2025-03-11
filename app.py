@@ -51,8 +51,8 @@ def chunk_text(text, max_length=500):
     return chunks
 
 # Load and preprocess documents
-pdf_text = extract_text_from_pdf("D:\GOPI PC 4C9\CLOUD AMBASSADORS\KT chatbot\harrypotter.pdf")
-summary_text = extract_text_from_pdf("D:\GOPI PC 4C9\CLOUD AMBASSADORS\KT chatbot\Detailed Summary of All Harry Potter Books.pdf")
+pdf_text = extract_text_from_pdf("harrypotter.pdf")
+summary_text = extract_text_from_pdf("Detailed Summary of All Harry Potter Books.pdf")
 
 cleaned_text = clean_text(pdf_text)
 cleaned_summary = clean_text(summary_text)
@@ -101,6 +101,6 @@ iface = gr.Interface(
 )
 
 if __name__ == "__main__":
-    iface.launch()
+    iface.launch(share=True)
     
     
